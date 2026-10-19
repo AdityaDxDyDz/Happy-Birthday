@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
 
-import homeSong from '../assets/Khat (Unreleased Verse) 💌 Navjot Ahuja Heartfelt Status 🎶.mp3';
-import loveLetterSong from '../assets/Ishq naina tere .... Instagram viral version song @Rb.10-Mysterious.mp3';
+import homeSong from '../assets/song1.mp3';
+import loveLetterSong from '../assets/song2.mp3';
 import testSong from '../assets/song3.mp3';
 
 const soundMap = {
@@ -21,26 +21,27 @@ const SoundManager = () => {
     if (!audioRef.current) {
       audioRef.current = new Audio(currentTrack);
       audioRef.current.loop = true;
-      audioRef.current.volume = 0.2; // Sets low volume (20%)
+      audioRef.current.volume = 0.2; // 20% low volume
     } else {
       audioRef.current.pause();
       audioRef.current.src = currentTrack;
-      audioRef.current.volume = 0.2; // Keeps low volume on route change
+      audioRef.current.volume = 0.2;
     }
 
+    const startAudio = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch(() => {});
+      }
+    };
+
+    // Attempt direct play
     const playPromise = audioRef.current.play();
+
     if (playPromise !== undefined) {
       playPromise.catch(() => {
-        const enableAudio = () => {
-          if (audioRef.current) {
-            audioRef.current.volume = 0.2;
-            audioRef.current.play();
-          }
-          window.removeEventListener('click', enableAudio);
-          window.removeEventListener('touchstart', enableAudio);
-        };
-        window.addEventListener('click', enableAudio);
-        window.addEventListener('touchstart', enableAudio);
+        // Fallback: Start music on the first tap/click anywhere on the screen
+        window.addEventListener('click', startAudio, { once: true });
+        window.addEventListener('touchstart', startAudio, { once: true });
       });
     }
 
@@ -48,6 +49,8 @@ const SoundManager = () => {
       if (audioRef.current) {
         audioRef.current.pause();
       }
+      window.removeEventListener('click', startAudio);
+      window.removeEventListener('touchstart', startAudio);
     };
   }, [location.pathname]);
 
