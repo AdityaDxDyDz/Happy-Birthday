@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import countdownSong from '../assets/countdownSong.mp3'; // Add your countdown track here
 
 const CountdownLock = ({ onUnlock }) => {
-  const targetDate = new Date('2026-10-20T02:00:59+05:30').getTime();
+  const targetDate = new Date('2026-10-20T23:59:59+05:30').getTime();
 
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [btnPos, setBtnPos] = useState({ top: '80%', left: '50%' });
