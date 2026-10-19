@@ -4,42 +4,42 @@ const LoveLetter = () => {
     const lettersData = [
         {
             id: 1,
-            name: "Rexon",
-            msg: "Wish you the happiest birthday",
+            name: "Adi",
+            msg: "Wish you the happiest birthday preets..",
         },
         {
             id: 2,
-            name: "Rexon",
-            msg: "One picture from you can change my whole day, my whole mood, my whole heartbeat.",
+            name: "Adi",
+            msg: "I have worked on various projects, but this one is the most special. From giving handwritten letters to creating a digital love letter intregreted in a site, every step was filled with thoughts of you. I hope this little surprise brings a smile to your face and warmth to your heart.",
         },
         {
             id: 3,
-            name: "Rexon",
-            msg: "Even through screens and pixels, your laugh reaches me like sunlight through a window—warm, real, and impossible to forget.",
+            name: "Adi",
+            msg: "Apart from the screens and the distance, For past 4 years it is like a dream, a beautiful dream that I never want to wake up from. Me and you, every day, every moment, it is like a story written by stars that I want to read over and over again, and these past 3 months gave it more light as before sleeping the face i used to see was yours and even after waking up, it was still there. Hopefully it will continue to be there from next year.",
         },
         {
             id: 4,
-            name: "Rexon",
-            msg: "Every notification from you feels like a heartbeat whispering, I’m here, and I love you.",
+            name: "Adi",
+            msg: "Every notification from you feels like a heartbeat whispering, but this is something you can keep forever as a treasured memory. Always been a tech guy, yet never thought of gifting you something digital like this, but I hope you like it as you always wanted something like this.",
         },
         {
             id: 5,
-            name: "Rexon",
-            msg: "Our messages might travel through wires, but every word you send lands straight in my heart.",
+            name: "Adi",
+            msg: "Our messages might travel through wires and waves, but every word you send lands straight in my heart.",
         },
         {
             id: 6,
-            name: "Rexon",
-            msg: "Ever since our we met, my heart knew where it wanted to stay— with you, in every soft moment, every smile, every quiet piece of forever.",
+            name: "Adi",
+            msg: "Ever since we met, my heart knew where it wanted to stay— with you, in every soft moment, every smile, every quiet piece of forever. We always sticked together like sun and moon, like stars and night, like waves and shore. I love you...",
         },
         {
             id: 7,
-            name: "Rexon",
-            msg: " but you turned it into a memory my heart refuses to forget. Since then, every moment with you has felt softer, brighter, and filled with a kind of peace only you bring.",
+            name: "Adi",
+            msg: " From 'Happy Birthday Pratyaksha' to 'Happy Birthday Preets' to 'Happy Birthday my forever and ever', you turned it into a memory my heart refuses to forget. Since then, every moment with you has felt softer, brighter, and filled with a kind of peace only you bring.",
         },
         {
             id: 8,
-            name: "Rexon",
+            name: "Adi",
             msg: "Since our first conversation, you’ve been the quiet spark that changed my world, turning ordinary days into moments that feel beautifully meant to be.",
         },
     ];
@@ -127,7 +127,7 @@ const LoveLetter = () => {
                     <div className="munna envelope-flap text-black relative">
                         <div className='munna absolute left-1/2 top-[20%] -translate-x-1/2 flex items-center justify-center flex-col md:gap-y-2'>
                             <span className='munna font-sriracha md:text-2xl text-lg'>Envelope Of Love</span>
-                            <span className='munna font-dancingScript md:text-3xl text-xl'>Dear Trisha</span>
+                            <span className='munna font-dancingScript md:text-3xl text-xl'>Dear Preets</span>
                         </div>
                     </div>
                     <div className="munna envelope-folds">
