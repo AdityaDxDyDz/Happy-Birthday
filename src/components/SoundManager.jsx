@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
 
-import homeSong from '../assets/song1.mp3';
-import loveLetterSong from '../assets/song2.mp3';
+import homeSong from '../assets/Khat (Unreleased Verse) 💌 Navjot Ahuja Heartfelt Status 🎶.mp3';
+import loveLetterSong from '../assets/Ishq naina tere .... Instagram viral version song @Rb.10-Mysterious.mp3';
 import testSong from '../assets/song3.mp3';
 
 const soundMap = {
